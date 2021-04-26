@@ -2,6 +2,7 @@ body{
     padding: 0;
     margin: 0;
     background-color: #eee;
+    font-family: 'Oldenburg', cursive;
 }
 
 .wrapper{
@@ -9,6 +10,7 @@ body{
     display: flex;
     flex-direction: column;
     gap: .5rem;
+    overflow: hidden;
 }
 
 header{
@@ -49,6 +51,42 @@ header nav a{
 
 header nav a:hover{
     color: orangered;
+}
+
+.startStyle{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    box-sizing: border-box;
+    padding: 1rem;
+    margin-bottom: 3rem;
+}
+
+.col1{
+    flex-basis: 40%;
+    position: relative;
+    margin-left: 50px;
+}
+
+.col1::after{
+    content:'';
+    width: 10px;
+    height: 57%;
+    background: linear-gradient(#ff469f, #ff6062);
+    position:absolute;
+    left: -40px;
+    top: 8px;
+}
+
+.col2{
+    position: relative;
+    flex-basis: 60%;
+    display: flex;
+    align-items: center;
+}
+
+.col2 img{
+    width: 70%;
 }
 
 .articleStyle{
