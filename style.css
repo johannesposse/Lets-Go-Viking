@@ -1,8 +1,9 @@
 body{
     margin: 0;
-    padding: 0;
-    width: 100%;    
-    background-color: #212d33;
+    padding: 0; 
+    /* width: 100%; */
+    /* background-color: #212d33; */
+    background-image: radial-gradient(circle, #212d33, #243238, #27363d, #2b3b43, #2e4048);
 }
 
 h1 { font-family: MedievalSharp; 
@@ -31,8 +32,8 @@ p {
 
 blockquote { 
     font-family: MedievalSharp; 
-    font-size: 21px; font-style: 
-    normal; font-variant: normal; 
+    font-size: 21px; font-style: normal;
+    font-variant: normal; 
     font-weight: 400; 
     line-height: 30px; 
 } 
@@ -48,11 +49,33 @@ pre {
 .wrapper{
     margin: 0  auto;
     max-width: 1600px;
-    background-color: #212d33;
+    width: 100%;
+    background-color: #141b1fad;
     display: flex;
     flex-direction: column;
-    width: 100%;
 }
+
+/* .wrapper::after{
+    content:'';
+    width: 400px;
+    height: 100%;
+    background: linear-gradient(#ff469f, #ff6062);
+    background: url("img/pattern.png");
+    background-size: contain;
+    position:absolute;
+    right: -460px;
+}
+
+.wrapper::before{
+    content:'';
+    width: 400px;
+    height: 100%;
+    background: linear-gradient(#ff469f, #ff6062);
+    background:url("img/pattern.png");
+    background-size: contain;
+    position:absolute;
+    left: -460px;
+} */
 
 header{
     display: flex;
@@ -62,7 +85,7 @@ header{
     padding: 1rem;
     width: 100%;
     height: 120px;
-    background: linear-gradient(#212d33, #2f4049);
+    background-color:#131A1E;
 }
 
 header .headImgLogo{
@@ -91,13 +114,17 @@ main{
     background: linear-gradient(90deg, #00000088 50%, #ffffff44 100%),
     url("img/IMG_1442.JPEG");
     background-size: cover;
-
 }
 
 main .col1{
     color: white;
     position: relative;
     flex-basis: 40%;
+   
+}
+
+main p{
+    margin-left: 0;
 }
 
 .mainNav{
@@ -150,6 +177,7 @@ article {
     align-items: center;
     gap: 3rem;
     width: 100%;
+    margin-bottom: 3rem;
 }
 
 .col1Art{
@@ -167,16 +195,35 @@ article {
 }
 
 .art{
+    padding: 0;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
-    background-color: #eee;
+    justify-content: space-between;
+    background-color: rgb(29, 29, 29);
+    border-radius: 3px;
+    box-shadow: 0 0 2rem rgb(0, 0, 0, 0.4);
     flex-basis: 30%;
     min-height: 500px;
     box-sizing: border-box;
-    padding: 1rem;
+    /* padding: 1rem; */
+    color: white;
 }
 
 .art img{
+    width: 100%;
+}
+
+.art button, h3, p{
+    margin: 1rem;
+}
+
+.art h3{
+    margin-top: 1rem;
+    font-size: 2rem;
+}
+
+footer{
+    background-color: rgb(29, 29, 29);
+    height: 200px;
     width: 100%;
 }
