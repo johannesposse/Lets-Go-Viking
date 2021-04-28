@@ -2,9 +2,15 @@ body{
     margin: 0;
     padding: 0; 
     background-color: #eee;
+    background: linear-gradient(0deg, #ffad2900 50%, #00000044 100%),
+    url("");
+    background-size: cover;
+    background-position: center;
+    /* background-image: url("https://unsplash.com/photos/DUXACn8tgp4"); */
     /* width: 100%; */
     /* background-color: #212d33; */
     /* background-image: radial-gradient(circle, #212d33, #243238, #27363d, #2b3b43, #2e4048); */
+   
 }
 
 h1 { font-family: MedievalSharp; 
@@ -54,6 +60,7 @@ pre {
     /* background-color: #141b1fad; */
     display: flex;
     flex-direction: column;
+   
 }
 
 
@@ -196,7 +203,7 @@ main .col2 img{
     transform:scale3d(1.1, 1.1,1.1);
 }
 
-article {
+article{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -219,8 +226,6 @@ article {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    /* background-color: rgb(211, 211, 211); */
-    /* border-radius: 100%; */
     flex-basis: 30%;
     min-height: 600px;
     box-sizing: border-box;
@@ -229,6 +234,7 @@ article {
     background:linear-gradient(360deg, #00000088 50%, #ffffff44 100%), url("https://images.unsplash.com/photo-1615672968910-90f554a4d607?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1957&q=80");
     background-position: center;
     background-size: cover;
+    box-shadow: 0 0 2rem rgb(0, 0, 0, 0.3);
 }
 
 .art img{
@@ -267,6 +273,7 @@ article {
     align-self: center;
     gap: 0rem;
     max-width: 60%;
+    color: black;
 }
 
 .pattern{
@@ -282,4 +289,38 @@ footer{
     background-color: rgb(29, 29, 29);
     height: 200px;
     width: 100%;
+}
+
+
+
+@media only screen and (max-width:1040px){
+    .col1Art{
+        flex-direction: column-reverse;
+    }
+
+    nav{
+        width: 100%;
+        background: linear-gradient(#ff54a2, #ff575a);
+        position:absolute;
+        top: 75px;
+        right: 0px;
+        z-index: 2;
+    }
+
+    nav a {
+        display: block;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        color: #fff;
+    }
+
+    .headImgMenu{
+        display: block;
+        margin-left: auto;
+    }
+
+    #menuNav{
+        overflow: hidden;
+        transition: all 0.5s ease;
+    }
 }
