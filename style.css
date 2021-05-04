@@ -2,16 +2,10 @@ body{
     margin: 0;
     padding: 0; 
     background-color: #eee;
-    background: linear-gradient(0deg, #ffad2900 50%, #00000044 100%),
-    url("");
-    background-size: cover;
-    background-position: center;
-    /* background-image: url("https://unsplash.com/photos/DUXACn8tgp4"); */
-    /* width: 100%; */
-    /* background-color: #212d33; */
-    /* background-image: radial-gradient(circle, #212d33, #243238, #27363d, #2b3b43, #2e4048); */
-   
+    
 }
+
+
 
 h1 { font-family: MedievalSharp; 
     font-size: 4rem; 
@@ -30,7 +24,7 @@ h3 {
 } 
 p { 
     font-family: MedievalSharp; 
-    font-size: 1rem; 
+    font-size: 1.3rem; 
     font-style: normal; 
     font-variant: normal; 
     font-weight: 400; 
@@ -73,6 +67,7 @@ header{
     width: 100%;
     height: 120px;
     background-color:#131A1E;
+    overflow: hidden;
 }
 
 header .headImgLogo{
@@ -144,6 +139,7 @@ main{
     background-size: cover;
     background-position:bottom;
 }
+
 
 main .col1{
     color: white;
@@ -285,6 +281,40 @@ article{
     background-position: center;
 }
 
+.sectionKontakt{
+    margin: 3rem auto;
+    box-sizing: border-box;
+    border-radius: 5px;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 450px;
+    box-shadow: 0 0 2rem rgb(0, 0, 0, 0.2);
+}
+
+.sectionKontakt form{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.sectionKontakt form input{
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    height: 30px;
+    border-radius: 5px;
+    padding-left: 1rem;
+    font-family: MedievalSharp; 
+}
+
+.sectionKontakt form textarea#message{
+    height: 200px;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+    border-width: 2px;
+}
+
 footer{
     background-color: rgb(29, 29, 29);
     height: 200px;
@@ -294,11 +324,11 @@ footer{
 
 
 @media only screen and (max-width:1040px){
-    .col1Art{
+    /* .col1Art{
         flex-direction: column-reverse;
     }
 
-    nav{
+    nav .menuNav{
         width: 100%;
         background: linear-gradient(#ff54a2, #ff575a);
         position:absolute;
@@ -307,7 +337,7 @@ footer{
         z-index: 2;
     }
 
-    nav a {
+    nav a .menuNav{
         display: block;
         margin-top: 10px;
         margin-bottom: 10px;
@@ -323,4 +353,4 @@ footer{
         overflow: hidden;
         transition: all 0.5s ease;
     }
-}
+} */
