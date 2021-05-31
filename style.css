@@ -24,7 +24,10 @@ p {
     font-style: normal; 
     font-variant: normal; 
     font-weight: 400; 
+    margin: 0rem;
     margin-bottom: 3rem;
+    padding-left: 0rem;
+    padding-right: 0rem;
 }
 
 
@@ -146,6 +149,14 @@ header nav a:hover{
     background-position:bottom;
 }
 
+
+.welcome p{
+    padding-left: 0rem;
+    padding-right: 0rem;
+    margin: 0;
+    margin-bottom: 1rem;
+}
+
 .wCol1{
     color: white;
     position: relative;
@@ -216,7 +227,7 @@ header nav a:hover{
     background:linear-gradient(360deg, #00000088 50%, #ffffff44 100%), url("https://images.unsplash.com/photo-1615672968910-90f554a4d607?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1957&q=80");
     background-position: center;
     background-size: cover;
-    box-shadow: 0 0 2rem rgb(0, 0, 0, 0.3); */
+    box-shadow: 0 0 2rem rgb(0, 0, 0, 0.3); 
 }
 
 .card h3, p{
@@ -240,7 +251,7 @@ and (max-width : 900px) {
         font-style: normal; 
         font-variant: normal; 
         font-weight: 400; 
-        margin-bottom: 3rem;
+        margin-bottom: 1rem;
     }
     
     header{
@@ -250,6 +261,10 @@ and (max-width : 900px) {
     
     header nav{
         display: none;
+    }
+
+    article{
+        padding: 1rem;
     }
 
     .menuIco{
@@ -262,16 +277,12 @@ and (max-width : 900px) {
         padding: 2rem;
     }
 
-    /* .wCol1 h1{
-        font-size: 2.9rem;
-    } */
 
     .wCol2{
         display: none;
     }
 
     .whatIs{
-        /* padding: 2rem; */
         text-align: center;
     }
 
