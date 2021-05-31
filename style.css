@@ -99,7 +99,7 @@ header{
 
 hr{
     height: 1px;
-    width: 300px;
+    width: 90%;
     border: none;
     background: var(--menuColor);
 }
@@ -236,6 +236,54 @@ header nav a:hover{
     margin: 0.5rem;
 }
 
+.uppleverser{
+    max-width: 1600px;
+    min-height: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    margin-top: 3rem;
+    box-sizing: border-box;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    gap: 3rem;
+}
+
+.upplevelse{
+    display: flex;
+    width: 100%;
+    min-height: 220px;
+    gap: 3rem;
+}
+
+.upplevelse img{
+    width: 150px;
+    height: 150px;
+}
+
+.upplevelseInfo{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.upplevelseInfo h1{
+    margin: 0;
+}
+
+.upplevelseInfo p{
+    padding-left: 0;
+}
+
+
+footer{
+    width: 100%;
+    height: 300px;
+    background-color: var(--menuColor);
+    margin-top: 2rem;
+    display: flex;
+}
+
 @media only screen 
 and (min-width : 320px) 
 and (max-width : 900px) {
@@ -288,6 +336,21 @@ and (max-width : 900px) {
 
     .card{
         flex-basis: 100%;
+    }
+
+    .uppleverser{
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .upplevelse{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .upplevelseInfo{
+        align-items: center;
     }
 
 }
