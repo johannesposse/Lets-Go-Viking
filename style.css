@@ -282,6 +282,7 @@ footer{
     background-color: var(--menuColor);
     margin-top: 2rem;
     display: flex;
+    bottom: 0;
 }
 
 @media only screen 
