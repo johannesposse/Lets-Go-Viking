@@ -29,9 +29,7 @@ function sendEmail(){
     let messages = document.querySelector("#message");
 
     Email.send({
-        Host : "mail1.webnode.com",
-        Username : "info@letsgoviking.com",
-        Password : "bevakningstjanst123",
+        SecureToken : "9f204852-7f1d-48f9-926e-ae61e3b475fa",
         To : 'info@letsgoviking.com',
         From : "info@letsgoviking.com",
         Subject : "Nytt meddelande från Let's Go Viking",
