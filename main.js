@@ -10,9 +10,10 @@ menuIco.addEventListener("click", function(){
         mobileMenu.style.webkitAnimationName = "slide-right";
         mobileMenu.style.webkitAnimationDuration =".5s";
 
-    }else{
-        mobileMenu.style.webkitAnimationName = "slide-left";
-        mobileMenu.style.webkitAnimationDuration =".5s";
+    }
+    else{
+        // mobileMenu.style.webkitAnimationName = "slide-left";
+        // mobileMenu.style.webkitAnimationDuration =".5s";
         mobileMenu.style.display = "none"
     }
 })
