@@ -29,25 +29,32 @@ function sendEmail(){
     let messages = document.querySelector("#message");
 
     Email.send({
-        Host : "smtp.elasticemail.com",
-        Username : "johannesposse@gmail.com",
-        Password : "6B7ADAB750FBA2C91FB8E53C92A039FAA845",
-        To : 'johannesposse@gmail.com',
-        From : "johannesposse@gmail.com",
+        Host : "mail1.webnode.com",
+        Username : "info@letsgoviking.com",
+        Password : "bevakningstjanst123",
+        To : 'info@letsgoviking.com',
+        From : "info@letsgoviking.com",
         Subject : "Nytt meddelande från Let's Go Viking",
         Body : "Förnamn: " + firstName.value + "<br>" + "Efternamn: " + lastName.value + "<br>" + "Epost: " + email.value + "<br>" +"Meddelande:"+ messages.value
     }).then(
-    message => document.querySelector("#pConfirm").innerText = message,
-    confirm()
-    );
+        message => alert(message)
+      );
+    // .then(
+    // message => document.querySelector("#pConfirm").innerText = message,
+    // confirm()
+    // //greenyellow
+    // );
+
+
 }
 
-function confirm(){
-    if(message => document.querySelector("#pConfirm").innerText == "OK"){
-        document.querySelector(".confirm").style.backgroundColor ="green"
-    }else{
-        document.querySelector(".confirm").style.backgroundColor ="red"
-    }
+function confirm()
+{
+    // if(message => document.querySelector("#pConfirm").innerText == "OK"){
+    //     document.querySelector(".btnSendMail").style.backgroundColor ="greenyellow"
+    // }else{
+    //     document.querySelector(".btnSendMail").style.backgroundColor ="red"
+    // }
 
     document.querySelector(".confirm").style.display ="block",
     document.querySelector(".confirm").style.webkitAnimationName = "slide-right",
