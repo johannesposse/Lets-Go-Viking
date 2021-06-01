@@ -5,6 +5,10 @@
     --mobileMenu:#132938;
 }
 
+html {
+    scroll-padding-top: 200px; /* height of sticky header */
+  }
+
 h1 {
     font-size: 4rem; 
     font-style: normal; 
@@ -421,5 +425,7 @@ and (max-width : 900px) {
         width: 100%;
         margin-bottom: 2rem;
     }
+
+    
 
 }
