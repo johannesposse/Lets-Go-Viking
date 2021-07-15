@@ -164,6 +164,7 @@ header nav a:hover{
     padding: 3rem;
     margin-bottom: 3rem;
     background: linear-gradient(90deg, #00000088 50%, #ffffff44 100%),
+    /* url("img/DSC_0099.jpg"); */
     url("https://images.unsplash.com/photo-1566840849929-5a60a802788d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1567&q=80");
     background-size: cover;
     background-position:bottom;
