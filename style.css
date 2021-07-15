@@ -3,10 +3,16 @@
     --menuColor: #131A1E;
     --menuColorHover:#132938;
     --mobileMenu:#132938;
+    
+}
+
+a {
+    text-decoration: none;
 }
 
 html {
     scroll-padding-top: 200px; 
+    
   }
 
 h1 {
@@ -178,6 +184,10 @@ header nav a:hover{
     flex-basis: 40%;
 }
 
+.wCol1 p{
+    text-align: start;
+}
+
 .wCol2{
     position:relative;
     flex-basis: 40%;
@@ -228,6 +238,7 @@ header nav a:hover{
     flex-direction: column;
     align-items: center;
     box-sizing: border-box;
+    margin-top: 5rem;
 }
 
 .cards{
@@ -243,7 +254,7 @@ header nav a:hover{
 
 .card{
     flex-basis: 30%;
-    height: 600px;
+    height: 550px;
     background-color: blue;
     padding: 0;
     display: flex;
@@ -252,7 +263,7 @@ header nav a:hover{
     box-sizing: border-box;
     border-radius: 2px;
     color: white;
-    background:linear-gradient(360deg, #00000088 50%, #ffffff44 100%), url("https://images.unsplash.com/photo-1615672968910-90f554a4d607?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1957&q=80");
+    background:linear-gradient(0deg, #00000088 100%, #ffffff44 10%), url("https://images.unsplash.com/photo-1615672968910-90f554a4d607?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1957&q=80");
     background-position: center;
     background-size: cover;
     box-shadow: 0 0 2rem rgb(0, 0, 0, 0.3); 
@@ -262,7 +273,22 @@ header nav a:hover{
     padding-left: 0.5rem;
     padding-right: 0.5rem;
     margin: 0.5rem;
+    text-align: center;
+    
 }
+
+.cardText{
+    height: 30%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5rem;
+    
+}
+
+/* .card h3{
+    text-align: center;
+    background-color: black;
+} */
 
 .uppleverser{
     max-width: 1600px;
@@ -301,6 +327,7 @@ header nav a:hover{
 
 .upplevelseInfo p{
     padding-left: 0;
+    margin-top: 2rem;
 }
 
 .kontakt{
@@ -346,6 +373,12 @@ header nav a:hover{
 .whatIs img{
     width: 70%;
     margin-bottom: 2rem;
+}
+
+.whatIs p{
+    text-align: center;
+    padding-left: 8rem;
+    padding-right: 8rem;
 }
 
 
