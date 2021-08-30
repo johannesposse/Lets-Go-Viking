@@ -130,8 +130,8 @@ hr{
 }
 
 header img{
-    width: 100px;
-    margin-left: 1rem;
+    width: 80px;
+    margin-left: 2rem;
 }
 
 header nav {
@@ -273,37 +273,37 @@ header nav a:hover{
 }
 
 .card.yxkastning{
-    background:linear-gradient(0deg, #00000088 100%, #ffffff44 10%), url("img/images/yxkastning.jpg");
+    background:linear-gradient(0deg, #00000088 100%, #ffffff44 10%), url("img/images/yxkastning_1.jpg");
     background-position: center;
     background-size: cover;
 }
 
 .card.pilbagsskytte{
-    background:linear-gradient(0deg, #00000088 100%, #ffffff44 10%), url("img/images/pilbagsskytte.jpg");
+    background:linear-gradient(0deg, #00000088 100%, #ffffff44 10%), url("img/images/pilbagsskytte_1.jpg");
     background-position: center;
     background-size: cover;
 }
 
 .card.femkamp{
-    background:linear-gradient(0deg, #00000088 100%, #ffffff44 10%), url("img/images/femkamp.JPEG");
+    background:linear-gradient(0deg, #00000088 100%, #ffffff44 10%), url("img/images/femkamp_1.JPEG");
     background-position: center;
     background-size: cover;
 }
 
 .card.mjod{
-    background:linear-gradient(0deg, #00000088 100%, #ffffff44 10%), url("img/images/mjod.jpg");
+    background:linear-gradient(0deg, #00000088 100%, #ffffff44 10%), url("img/images/mjod_1.jpg");
     background-position: center;
     background-size: cover;
 }
 
 .card.musik{
-    background:linear-gradient(0deg, #00000088 100%, #ffffff44 10%), url("img/images/musik.jpg");
+    background:linear-gradient(0deg, #00000088 100%, #ffffff44 10%), url("img/images/musik_1.jpg");
     background-position: center;
     background-size: cover;
 }
 
 .card.mat{
-    background:linear-gradient(0deg, #00000088 100%, #ffffff44 10%), url("img/images/mat.jpg");
+    background:linear-gradient(0deg, #00000088 100%, #ffffff44 10%), url("img/images/mat_1.jpg");
     background-position: center;
     background-size: cover;
 }
@@ -351,8 +351,9 @@ header nav a:hover{
 
 .upplevelseImg{
     display: flex;
-    width: 100%;
-    height: 150px;
+    /* max-width: 100%; */
+    /* max-height: 150px; */
+    flex-wrap: wrap;
     margin-left: 13rem;
     align-items:center;
     overflow: hidden;
@@ -360,9 +361,13 @@ header nav a:hover{
 }
 
 .upplevelseImg img{
-    max-width: 200px;
+    /* max-width: 200px; */
+    /* width: 14%; */
+    height: 150px;
+    object-fit:cover;
     /* max-height: 200px; */
     transition: all 0.5s;
+    border-radius: 5px;
 
 }
 
@@ -386,19 +391,22 @@ header nav a:hover{
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
+    border-radius: 5px;
 }
 
 .arrows{
     display: flex;
-    justify-content: space-between;
-    margin-top: 40%;
+    justify-content: center;
+    align-items: flex-end;
+    height: 100%;
 }
 
 .module img{
     height: 50px;
     width: 50px;
     margin: 1rem;
-    background-color: black;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.685);
 }
 
 
@@ -478,7 +486,7 @@ header nav a:hover{
 
 footer{
     width: 100%;
-    height: 300px;
+    height: 100px;
     background-color: var(--menuColor);
     margin-top: 2rem;
     display: flex;
